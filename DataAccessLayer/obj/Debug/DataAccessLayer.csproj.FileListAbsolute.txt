@@ -1,0 +1,6 @@
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\HsnHs\source\repos\Appsoly\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
