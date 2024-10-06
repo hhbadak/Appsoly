@@ -95,21 +95,21 @@
                         <div class="text-area ">
                             <div class="sec-heading  light-title ">
                                 <div class="content-area">
-                                    <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">why choose us</span>
-                                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Why our <span class='hollow-text'>customers</span>  choose <span class='featured-text'>working
+                                    <span class=" pre-title wow fadeInUp " data-wow-delay=".2s">Neden BİZ?</span>
+                                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Müşterilerimiz Neden <span class='hollow-text'>Bizimle Çalışmayı</span> <span class='featured-text'> Tercih 
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-                                            <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg></span> with us</h2>
+                                            <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg></span>Ediyor?</h2>
                                 </div>
                             </div>
-                            <p class=" about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+                            <p class=" about-text">Müşterilerimiz, işlerini bizimle yapmayı tercih ediyor çünkü kaliteli hizmetimiz ve müşteri odaklı yaklaşımımız sayesinde ihtiyaçlarını en iyi şekilde karşılıyoruz. Güvenilir ve rekabetçi fiyatlarımızla birlikte esnek çözümler sunarak müşteri memnuniyetini her zaman ön planda tutuyoruz.</p>
                             <div class="info-items-list">
                                 <div class="row ">
                                     <div class="col-12 ">
                                         <div class="info-item">
                                             <span class="info-number ">01.</span>
                                             <div class="info-content">
-                                                <h5 class="info-title">latest technologies </h5>
-                                                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                                                <h5 class="info-title">Kaliteli Ürün ve Hizmet Sunumu</h5>
+                                                <p class="info-text">Müşterileriniz, sizinle çalışmayı tercih ediyor olabilir çünkü sunduğunuz ürün veya hizmetler yüksek kalitede ve güvenilir. Müşteri memnuniyetini ön planda tutarak sürekli olarak kalitenizi arttırmanız, müşterilerin sizinle çalışmaktan memnun olmalarını sağlar.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -117,8 +117,8 @@
                                         <div class="info-item">
                                             <span class="info-number ">02.</span>
                                             <div class="info-content">
-                                                <h5 class="info-title">uniqe solutions </h5>
-                                                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                                                <h5 class="info-title">Müşteri Odaklı Yaklaşım</h5>
+                                                <p class="info-text">Müşterilerinizin ihtiyaçlarını ve beklentilerini anlamak ve onlara en iyi hizmeti sunmak için çaba göstermeniz, onların sizinle çalışmayı tercih etmelerini sağlar. Müşteri geri bildirimlerini dikkate almak, önerilere açık olmak ve müşteri memnuniyetini en üst düzeye çıkarmak için sürekli olarak çaba sarf etmeniz, müşterilerin size olan güvenini artırır.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,14 +126,13 @@
                                         <div class="info-item">
                                             <span class="info-number ">03.</span>
                                             <div class="info-content">
-                                                <h5 class="info-title">powerful strategies </h5>
-                                                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                                                <h5 class="info-title">Rekabetçi Fiyatlandırma ve Esneklik </h5>
+                                                <p class="info-text">Müşterileriniz, rekabetçi fiyatlandırma politikanız ve esnek ödeme seçenekleri sunmanız nedeniyle sizinle çalışmayı tercih edebilirler. Müşteri bütçelerine uygun seçenekler sunmak ve ödeme koşullarında esneklik sağlamak, müşterilerinizi memnun eder ve uzun vadeli iş ilişkilerinin oluşmasına katkı sağlar.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="cta-area "><a class=" btn-solid " href="#0">get in toutch</a></div>
                         </div>
                     </div>
                 </div>

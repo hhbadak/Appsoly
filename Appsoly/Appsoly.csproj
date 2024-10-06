@@ -203,7 +203,6 @@
     <Content Include="assets\images\customer\tarihicukurcarsibalikcisi.png" />
     <Content Include="assets\images\customer\tezHarita.png" />
     <Content Include="assets\images\faq\faq-illustration.png" />
-    <Content Include="assets\images\fav-icon\fav-icon.png" />
     <Content Include="assets\images\hero\hero-bg-1.jpg" />
     <Content Include="assets\images\hero\hero-bg-2.jpg" />
     <Content Include="assets\images\hero\hero-bg-3.jpg" />
@@ -212,6 +211,7 @@
     <Content Include="assets\images\icons\play-icon.svg" />
     <Content Include="assets\images\icons\search-icon.svg" />
     <Content Include="assets\images\logo\appsoly.png" />
+    <Content Include="assets\images\logo\appsolyA.png" />
     <Content Include="assets\images\logo\appsolyBlack.png" />
     <Content Include="assets\images\logo\HHB.png" />
     <Content Include="assets\images\logo\HHBlack.png" />
@@ -231,6 +231,7 @@
     <Content Include="assets\images\portfolio\1.jpg" />
     <Content Include="assets\images\portfolio\2.jpg" />
     <Content Include="assets\images\portfolio\3.jpg" />
+    <Content Include="assets\images\portfolio\3D.jpg" />
     <Content Include="assets\images\portfolio\4.jpg" />
     <Content Include="assets\images\portfolio\5.jpg" />
     <Content Include="assets\images\portfolio\6.jpg" />
@@ -253,12 +254,20 @@
     <Content Include="assets\images\testimonials\2.png" />
     <Content Include="assets\images\testimonials\3.png" />
     <Content Include="assets\videos\section-bg-video-1.mp4" />
+    <Content Include="assets\video\appsoly.mp4" />
+    <Content Include="BDKPanel\blogs.aspx" />
+    <Content Include="BDKPanel\createBlog.aspx" />
+    <Content Include="BDKPanel\createDebts.aspx" />
     <Content Include="BDKPanel\css\bootstrap.min.css" />
     <Content Include="BDKPanel\css\style.css" />
+    <Content Include="BDKPanel\debts.aspx" />
+    <Content Include="BDKPanel\expenses.aspx" />
+    <Content Include="BDKPanel\img\HHBadak.jpg" />
     <Content Include="BDKPanel\img\logo\150x34.png" />
     <Content Include="BDKPanel\img\testimonial-1.jpg" />
     <Content Include="BDKPanel\img\testimonial-2.jpg" />
     <Content Include="BDKPanel\img\user.jpg" />
+    <Content Include="BDKPanel\incomes.aspx" />
     <Content Include="BDKPanel\js\main.js" />
     <Content Include="BDKPanel\lib\chart\chart.min.js" />
     <Content Include="BDKPanel\lib\easing\easing.js" />
@@ -280,9 +289,12 @@
     <Content Include="BDKPanel\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
     <Content Include="BDKPanel\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
     <Content Include="BDKPanel\lib\waypoints\waypoints.min.js" />
+    <Content Include="BDKPanel\monthlyPayments.aspx" />
+    <Content Include="BDKPanel\signin.aspx" />
     <Content Include="BDKPanel\sindex.aspx" />
     <Content Include="blog.aspx" />
     <Content Include="blogDetail.aspx" />
+    <Content Include="contact.aspx" />
     <Content Include="css\main-LTR.css" />
     <Content Include="css\main-RTL.css" />
     <Content Include="css\vendors\all.min.css" />
@@ -335,6 +347,62 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BDKPanel\blogs.aspx.cs">
+      <DependentUpon>blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\blogs.aspx.designer.cs">
+      <DependentUpon>blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createBlog.aspx.cs">
+      <DependentUpon>createBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createBlog.aspx.designer.cs">
+      <DependentUpon>createBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createDebts.aspx.cs">
+      <DependentUpon>createDebts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createDebts.aspx.designer.cs">
+      <DependentUpon>createDebts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\debts.aspx.cs">
+      <DependentUpon>debts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\debts.aspx.designer.cs">
+      <DependentUpon>debts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\expenses.aspx.cs">
+      <DependentUpon>expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\expenses.aspx.designer.cs">
+      <DependentUpon>expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\incomes.aspx.cs">
+      <DependentUpon>incomes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\incomes.aspx.designer.cs">
+      <DependentUpon>incomes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\monthlyPayments.aspx.cs">
+      <DependentUpon>monthlyPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\monthlyPayments.aspx.designer.cs">
+      <DependentUpon>monthlyPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BDKPanel\sindex.aspx.cs">
       <DependentUpon>sindex.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,6 +430,13 @@
     </Compile>
     <Compile Include="blogDetail.aspx.designer.cs">
       <DependentUpon>blogDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -557,7 +632,10 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="assets\images\blog\images\" />
+    <Folder Include="assets\images\blog\imgThumb\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="AppsolyReferences.cs" />
+    <Compile Include="Blog.cs" />
+    <Compile Include="BlogComment.cs" />
     <Compile Include="Comments.cs" />
     <Compile Include="ConnectionStrings.cs" />
     <Compile Include="Customers.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="Sections.cs" />
     <Compile Include="Services.cs" />
     <Compile Include="Subjects.cs" />
+    <Compile Include="Subscription.cs" />
     <Compile Include="Team.cs" />
     <Compile Include="ThreeDPortfolio.cs" />
     <Compile Include="ThreeDPricing.cs" />

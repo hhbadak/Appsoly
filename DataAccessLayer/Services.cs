@@ -9,6 +9,6 @@ namespace DataAccessLayer
     public class Services
     {
         public int ID { get; set; }
-        public int Service { get; set; }
+        public string Service { get; set; }
     }
 }

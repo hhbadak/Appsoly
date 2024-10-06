@@ -40,7 +40,7 @@
                                 <div class="cta-links-area ">
                                     <a class=" btn-outline cta-link cta-link-primary " href="index.aspx#our-clients">Referanslarımız</a>
                                     <div class="play-btn-row-dir ">
-                                        <a class="video-link" href="https://www.youtube.com/watch?v=QI4_dGvZ5yE&amp;ab_channel=JUtah" role="button" title="play" data-fancybox="data-fancybox">
+                                        <a class="video-link" href="assets/video/appsoly.mp4" role="button" title="play" data-fancybox="data-fancybox">
                                             <div class="play-video-btn">
                                                 <div class="play-btn"><i class="fas fa-play icon"></i></div>
                                             </div>
@@ -71,13 +71,12 @@
                 <div class="content-area">
                     <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">Hizmetlerimiz</span>
                     <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>Size</span> İyi Gelecek!</h2>
-                    <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">
+                    <p class="subtitle wow fadeInUp" data-wow-delay=".6s">
                         İhtiyacınız olan hizmet birimlerimizden
                         <br>
                         sorunlarınızı çözmek için buradayız
                     </p>
                 </div>
-                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid    ">see all services <i class="bi bi-arrow-right icon "></i></a></div>
             </div>
             <div class="row gx-4 gy-4 services-row ">
                 <div class="col-12 col-md-6  col-lg-4 mx-auto ">
@@ -89,7 +88,6 @@
                             <h3 class="service-title">Web Yazılımı</h3>
                             <p class="service-text">Web Siteleri, E-Ticaret platformları ve Sosyal Ağlar gibi çeşitli projeler geliştiriyoruz.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End First service box   -->
                 </div>
@@ -102,7 +100,6 @@
                             <h3 class="service-title">Uygulama Geliştirme</h3>
                             <p class="service-text">Teknolojiyle bütünleşen çözümler, Mobil ve Windows uygulamalarımızda.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End fourth service box   -->
                 </div>
@@ -115,7 +112,6 @@
                             <h3 class="service-title">SEO Hizmetleri</h3>
                             <p class="service-text">Dijital varlığınızı güçlendirin, SEO stratejilerimizle rekabete öncülük edin.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End 5th service box-->
                 </div>
@@ -128,7 +124,6 @@
                             <h3 class="service-title">Dijital Pazarlama</h3>
                             <p class="service-text">Müşterilerimize dijital varlıklarını büyütmeleri ve online başarılarını artırmaları konusunda yardımcı oluyoruz.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End Second service box-->
                 </div>
@@ -141,7 +136,6 @@
                             <h3 class="service-title">SaaS (Software as a Service) </h3>
                             <p class="service-text">SaaS (Software as a Service) sağlayıcısı olarak, müşterilere bulut tabanlı yazılım çözümleri sunuyoruz.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End Third service box-->
                 </div>
@@ -154,7 +148,6 @@
                             <h3 class="service-title">Veri Analizi</h3>
                             <p class="service-text">Veri analitiğiyle geleceği öngörüyor, rekabet avantajı sağlıyoruz. Güçlü verilerle başarıyı yakalayın.</p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "></i></a>
                     </div>
                     <!-- End 6th service box-->
                 </div>
@@ -168,7 +161,7 @@
         <div class="container">
             <div class="sec-heading   centered ">
                 <div class="content-area">
-                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Dünya çapında 30'dan fazla müşterinin güvendiği</h2>
+                    <h2 class=" title wow fadeInUp" data-wow-delay=".4s">Dünya çapında 30'dan fazla müşterinin güvendiği</h2>
                 </div>
             </div>
             <div class=" clients-logos d-flex align-items-center justify-content-around flex-wrap">
@@ -260,7 +253,7 @@
     <!-- End  our-clients Section-->
 
     <!-- Start  testimonials Section-->
-    <section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials">
+    <%--<section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials">
         <div class="overlay-photo-image-bg parallax " data-bg-img="assets/images/sections-bg-images/1.jpg" data-bg-opacity=".25"></div>
         <div class="container">
             <div class="sec-heading  centered ">
@@ -352,144 +345,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--%>
     <!-- End  testimonials Section-->
-    <!-- Start  faq Section-->
-    <section class="faq mega-section   " id="faq">
-        <div class="shape-top-left"></div>
-        <div class="shape-bottom-right"></div>
-        <div class="pattern-top-end-dir"></div>
-        <div class="pattern-bottom-start-dir"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5 align-self-center">
-                    <div class="faq-img start-dir-img-frame wow fadeIn  " data-wow-delay="0.2s">
-                        <img class="img-fluid " loading="lazy" src="assets/images/faq/faq-illustration.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-7 ">
-                    <div class="sec-heading  ">
-                        <div class="content-area">
-                            <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">FAQs</span>
-                            <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>frequently </span>asked questions </h2>
-                        </div>
-                    </div>
-                    <!--Start Accordion List For FAQ-->
-                    <div class="faq-accordion " id="accordion">
-                        <div class="card mb-2">
-                            <div class="card-header " id="heading-1">
-                                <h5 class="mb-0 faq-title">
-                                    <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">are your service easy to use?</button>
-                                </h5>
-                            </div>
-                            <div class="collapse " id="collapse-1" aria-labelledby="collapse-1" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="faq-answer">
-                                        mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-          accusamus terry richardson ad squid. 3 wolf moon officia
-          aute,
-          non cupidatat skateboard dolor brunch. Food truck quinoa
-          nesciunt
-          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-          a
-          bird on it squid single-origin coffee nulla assumenda
-          shoreditch
-          et. Nihil anim keffiyeh helvetica, craft beer labore wes
-          anderson
-          cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-header " id="heading-2">
-                                <h5 class="mb-0 faq-title">
-                                    <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">will i receive future updates?</button>
-                                </h5>
-                            </div>
-                            <div class="collapse " id="collapse-2" aria-labelledby="collapse-2" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="faq-answer">
-                                        mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-          accusamus terry richardson ad squid. 3 wolf moon officia
-          aute,
-          non cupidatat skateboard dolor brunch. Food truck quinoa
-          nesciunt
-          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-          a
-          bird on it squid single-origin coffee nulla assumenda
-          shoreditch
-          et. Nihil anim keffiyeh helvetica, craft beer labore wes
-          anderson
-          cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-header " id="heading-3">
-                                <h5 class="mb-0 faq-title">
-                                    <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">is this services work in my country?</button>
-                                </h5>
-                            </div>
-                            <div class="collapse " id="collapse-3" aria-labelledby="collapse-3" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="faq-answer">
-                                        mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-          accusamus terry richardson ad squid. 3 wolf moon officia
-          aute,
-          non cupidatat skateboard dolor brunch. Food truck quinoa
-          nesciunt
-          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-          a
-          bird on it squid single-origin coffee nulla assumenda
-          shoreditch
-          et. Nihil anim keffiyeh helvetica, craft beer labore wes
-          anderson
-          cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-header " id="heading-4">
-                                <h5 class="mb-0 faq-title">
-                                    <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">How much I will pay?</button>
-                                </h5>
-                            </div>
-                            <div class="collapse " id="collapse-4" aria-labelledby="collapse-4" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="faq-answer">
-                                        mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-          accusamus terry richardson ad squid. 3 wolf moon officia
-          aute,
-          non cupidatat skateboard dolor brunch. Food truck quinoa
-          nesciunt
-          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-          a
-          bird on it squid single-origin coffee nulla assumenda
-          shoreditch
-          et. Nihil anim keffiyeh helvetica, craft beer labore wes
-          anderson
-          cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End  faq Section-->
+
     <!-- Start  blog Section-->
     <section class="blog blog-home mega-section  " id="blog">
         <div class="container ">
@@ -498,69 +356,36 @@
                     <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">blog</span>
                     <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">latest <span class='hollow-text'>news</span></h2>
                 </div>
-                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid  " href="blog-home-3-col.html">see all posts<i class="bi bi-arrow-right icon "></i></a></div>
+                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid" href="blog-home-3-col.html">see all posts<i class="bi bi-arrow-right icon "></i></a></div>
             </div>
             <div class="row ">
                 <div class="col-12 ">
                     <div class="posts-grid ">
                         <div class="row">
-                            <div class="col-12 col-lg-4 ">
-                                <div class="post-box">
-                                    <a class="post-link" href="#0" title="How litespeed technology works to speed up your site ">
-                                        <div class="post-img-wrapper  ">
-                                            <img class=" parallax-img   post-img" loading="lazy" src="assets/images/blog/post-images/1.jpg" alt="" /><span class="post-date"><span class="day">05 </span>oct 2022     </span>
-                                        </div>
-                                    </a>
-                                    <div class="post-summary">
-                                        <div class="post-info"><a class="info post-cat" href="#"><i class="bi bi-bookmark icon"></i>hosting</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>Allan Moore</a></div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="#0">
-                                                <h2 class="post-title">How litespeed technology works to speed up your site </h2>
+                            <asp:Repeater ID="rp_blog" runat="server">
+                                <ItemTemplate>
+                                    <div class="col-12 col-lg-4 ">
+                                        <div class="post-box">
+                                            <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>' title="<%# Eval("Title") %>">
+                                                <div class="post-img-wrapper">
+                                                    <img class=" parallax-img post-img" loading="lazy" src="../assets/images/blog/imgThumb/<%# Eval("ImgThumb") %>" alt="" /><span class="post-date"><span class="day"><%# ((DateTime)Eval("Date")).ToString("dd.MM.yyyy") %></span></span>
+                                                </div>
                                             </a>
-                                            <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                                            <a class="read-more" href="#0" title="How litespeed technology works to speed up your site ">read more<i class="bi bi-arrow-right icon "></i></a>
+                                            <div class="post-summary" style="width: 100%">
+                                                <div class="post-info"><a class="info post-cat" href="#"><i class="bi bi-bookmark icon"></i><%# Eval("Service") %></a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i><%# Eval("Team") %></a></div>
+                                                <div class="post-text">
+                                                    <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
+                                                        <h2 class="post-title"><%# Eval("Title") %></h2>
+                                                    </a>
+                                                    <p class="post-excerpt"><%# Eval("Brief") %></p>
+
+                                                    <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 ">
-                                <div class="post-box">
-                                    <a class="post-link" href="#0" title="give your website a new look and feel with themes">
-                                        <div class="post-img-wrapper  ">
-                                            <img class=" parallax-img   post-img" loading="lazy" src="assets/images/blog/post-images/2.jpg" alt="" /><span class="post-date"><span class="day">15 </span>sep 2022     </span>
-                                        </div>
-                                    </a>
-                                    <div class="post-summary">
-                                        <div class="post-info"><a class="info post-cat" href="#"><i class="bi bi-bookmark icon"></i>web dev</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>mhmd amin</a></div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="#0">
-                                                <h2 class="post-title">give your website a new look and feel with themes</h2>
-                                            </a>
-                                            <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                                            <a class="read-more" href="#0" title="give your website a new look and feel with themes">read more<i class="bi bi-arrow-right icon "></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 ">
-                                <div class="post-box">
-                                    <a class="post-link" href="#0" title="the role of domain names in SEO world explained ">
-                                        <div class="post-img-wrapper  ">
-                                            <img class=" parallax-img   post-img" loading="lazy" src="assets/images/blog/post-images/3.jpg" alt="" /><span class="post-date"><span class="day">27 </span>aug 2022     </span>
-                                        </div>
-                                    </a>
-                                    <div class="post-summary">
-                                        <div class="post-info"><a class="info post-cat" href="#"><i class="bi bi-bookmark icon"></i>SEO</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>yusuf amin</a></div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="#0">
-                                                <h2 class="post-title">the role of domain names in SEO world explained </h2>
-                                            </a>
-                                            <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                                            <a class="read-more" href="#0" title="the role of domain names in SEO world explained ">read more<i class="bi bi-arrow-right icon "></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </div>
                     </div>
                 </div>
@@ -568,147 +393,5 @@
         </div>
     </section>
     <!-- End  blog Section-->
-    <!-- Start  blog Section-->
-    <section class="contact-us  mega-section  pb-0" id="contact-us">
-        <div class="container">
-            <section class="contact-us-form-section  mega-section  ">
-                <div class="row">
-                    <div class="col-12 ">
-                        <div class="contact-form-panel">
-                            <div class="sec-heading centered    ">
-                                <div class="content-area">
-                                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Have any questions? Let's answer them</h2>
-                                </div>
-                            </div>
-                            <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
-                                <div class="custom-form-area input-boxed">
-                                    <!--Form To have user messages-->
-                                    <form class="main-form" id="contact-us-form" action="php/send-mail.php" method="post">
-                                        <span class="done-msg"></span>
-                                        <div class="row ">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="   input-wrapper">
-                                                    <input class="text-input" id="user-name" name="UserName" type="text" />
-                                                    <label class="input-label" for="user-name">Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="   input-wrapper">
-                                                    <input class="text-input" id="user-email" name="UserEmail" type="email" />
-                                                    <label class="input-label" for="user-email">E-mail <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 ">
-                                                <div class="   input-wrapper">
-                                                    <input class="text-input" id="msg-subject" name="subject" type="text" />
-                                                    <label class="input-label" for="msg-subject">Subject <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 ">
-                                                <div class="   input-wrapper">
-                                                    <textarea class=" text-input" id="msg-text" name="message"></textarea>
-                                                    <label class="input-label" for="msg-text">your message <span class="req">*</span></label><span class="b-border"></span><i></i><span class="error-msg"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 submit-wrapper">
-                                                <button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">Send your message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="locations-section  mega-section ">
-                <div class="sec-heading centered  ">
-                    <div class="content-area">
-                        <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">our offices around the world</h2>
-                    </div>
-                </div>
-                <div class=" contact-info-panel ">
-                    <div class="info-section ">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
-                                    <h4 class="location-title">New york</h4>
-                                    <div class="line-on-side "></div>
-                                    <p class="location-address">United States, 307 Wilshire, 2nd av. new york 3516.</p>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-email icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">email:</h6>
-                                            <a class="email link" href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-phone-call icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">phone:</h6>
-                                            <a class="tel link" href="tel:0123456789">+29876543210</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".6s">
-                                    <h4 class="location-title">London</h4>
-                                    <div class="line-on-side "></div>
-                                    <p class="location-address">United kingdom, 12 smith town, 2nd av. London 2159.</p>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-email icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">email:</h6>
-                                            <a class="email link" href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-phone-call icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">phone:</h6>
-                                            <a class="tel link" href="tel:0123456789">+969876543210</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".8s">
-                                    <h4 class="location-title">tokio</h4>
-                                    <div class="line-on-side "></div>
-                                    <p class="location-address">Japan, 307 chinzo appy road, portsika way. tokio 3516.</p>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-email icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">email:</h6>
-                                            <a class="email link" href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  ">
-                                        <i class="flaticon-phone-call icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title">phone:</h6>
-                                            <a class="tel link" href="tel:0123456789">+459876543210</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="container-fluid">
-            <section class="map-section ">
-                <div class="map-box  wow fadeInUp" data-wow-delay=".6s">
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe class="map-iframe" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1613762954590!5m2!1sen!2seg"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <!-- End  blog Section-->
+
 </asp:Content>

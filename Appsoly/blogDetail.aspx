@@ -28,99 +28,54 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="post-title">sdfsfsdfsdfsdfsdfsdf</h2>
+
+                    <asp:Repeater ID="rp_blogDetail" runat="server">
+                        <ItemTemplate>
+
+                            <h2 class="post-title"><%# Eval("Title") %></h2>
                 </div>
                 <div class="col-12 col-lg-9 mx-auto">
                     <div class="post-main-area">
                         <div class="post-info">
-                            <a class="info post-cat" href="#"><i class="fas fa-list-alt icon"></i>legal info</a>
-                            <a class="info post-author" href="#"><i class="fas fa-user icon"></i>yusuf amin</a><a class="info post-date"><i class="fas fa-history icon"></i></a>21/12/2022 <a class="info post-time"><i class="fas fa-eye icon"></i>1975</a>  <a class="info post-comments-count"><i class="fas fa-comments icon"></i>23</a>
+                            <a class="info post-cat" href="#"><i class="fas fa-list-alt icon"></i><%# Eval("Service") %></a>
+                            <a class="info post-author" href="#"><i class="fas fa-user icon"></i><%# Eval("Team") %></a><a class="info post-date"><i class="fas fa-history icon"></i></a><%# ((DateTime)Eval("Date")).ToString("dd.MM.yyyy") %>  <a class="info post-comments-count"><i class="fas fa-comments icon"></i><%# Eval("CommentCount") %></a>
                         </div>
                         <div class="post-content">
                             <p class=" first-litter post-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing 
-                  elit Impedit explicabo quis veritatis, 
-                  sed ipsam reprehenderit aliquam magni perferendis 
-                  nobis maiores inventore, harum pariatur, 
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  
-                  
+                               <%# Eval("Brief") %>
                             </p>
-                            <h2 class="post-heading">About our awesome firm </h2>
+                            <h2 class="post-heading"><%# Eval("Title") %></h2>
                             <div class="post-img-wrapper">
-                                <img loading="lazy" src="assets/images/blog/post-images/post-img.jpg" alt="Alternate Text" />
+                                <img loading="lazy" src="../assets/images/blog/images/<%# Eval("Image1") %>" alt="<%# Eval("Image1") %>" />
                             </div>
                             <p class="post-text">
-                                Lorem  
-                  elit Impedit explicabo quis veritatis, 
-                  sed ipsam reprehenderit aliquam magni perferendis 
-                  nobis maiores inventore, harum pariatur, 
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quod </a>Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  
-                  
+                               <%# Eval("Contents1") %>
                             </p>
-                            <h2 class="post-heading">Some Of our goals in our firm </h2>
-                            <ul class="post-list">
-                                <li class="post-list-item"><i>bi bi-check2-circle icon</i><span class="post-list-text">ipsum dolor sit amet consectetur adipisicing</span></li>
-                                <li class="post-list-item"><i>bi bi-check2-circle icon</i><span class="post-list-text">ipsum dolor sit amet consectetur adipisicing</span></li>
-                                <li class="post-list-item"><i>bi bi-check2-circle icon</i><span class="post-list-text">ipsum dolor sit amet consectetur adipisicing</span></li>
-                                <li class="post-list-item"><i>bi bi-check2-circle icon</i><span class="post-list-text">ipsum dolor sit amet consectetur adipisicing</span></li>
-                                <li class="post-list-item"><i>bi bi-check2-circle icon</i><span class="post-list-text">ipsum dolor sit amet consectetur adipisicing</span></li>
-                            </ul>
-                            <h2 class="post-heading">interested enough? you just on the shore let's dive deep</h2>
+                            
                             <p class="post-text">
-                                Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  nobis maiores inventore, harum pariatur, 
-                  Lorem ipsum dolor sit amet consectetur adipisicing 
-                  elit Impedit explicabo quis veritatis, <a href="#">Lorem ipsum dolor sit amet consectetur </a>
-                                <img class="float-end-direction " loading="lazy" src="assets/images/blog/post-images/2.jpg" alt="Alternate Text" />Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae? 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  nobis maiores inventore, harum pariatur, 
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                
+                               <%# Eval("Contents2") %> 
                             </p>
+                             <div class="post-img-wrapper">
+                                <img loading="lazy" src="../assets/images/blog/images/<%# Eval("Image2") %>" alt="<%# Eval("Image2") %>" />
+                            </div>
                             <blockquote cite="#">
-                                <i class="fas fa-quote-right icon"></i><span class="post-quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis odit repellendus sint assumenda quae 
-                    laborum</span>
+                                <i class="fas fa-quote-right icon"></i><span class="post-quote"><%# Eval("ImportantInformation") %></span>
                             </blockquote>
                             <p class="post-text">
-                                Lorem  
-                  elit Impedit explicabo quis veritatis, 
-                  sed ipsam reprehenderit aliquam magni perferendis 
-                  nobis maiores inventore, harum pariatur, 
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
-                  nam eum unde tenetur nisi temporibus veniam cumque nemo! 
-                  Deleniti quas, ea fuga vel, quis officiis laborum quaerat numquam possimus 
-                  qui alias fugiat aliquam eius soluta beatae?
+                                <%# Eval("Content2Continued") %>
                             </p>
                         </div>
                         <div class="tags panel">
                             <ul class="sidebar-list tags-list ">
                                 <li class="tags-icon-label "><i class="fas fa-tags icon"></i></li>
                                 <li class="tag-item">
-                                    <a class="tag-link" href="#">cloud</a>
-                                    <a class="tag-link" href="#">hosting</a>
-                                    <a class="tag-link" href="#">app dev</a>
-                                    <a class="tag-link" href="#">design</a>
-                                    <a class="tag-link" href="#">web</a>
-                                    <a class="tag-link" href="#">data</a>
+                                    <a class="tag-link" href="<%# Eval("Weld") %>"><%# Eval("Weld") %></a>
                                 </li>
                             </ul>
                         </div>
+
+                        </ItemTemplate>
+                    </asp:Repeater>
                         <div class="author-profile panel">
                             <h6 class="panel-title">about author</h6>
                             <div class="author-info">
@@ -235,10 +190,10 @@
                                         </div>
                                         <div class="comment-content">
                                             <p class="comment-text">
-                          Lorem ipsum dolor, sit amet consectetur
+                                                Lorem ipsum dolor, sit amet consectetur
                           adipisicing elit.Odit iure magni
                           quidem debitis ut tempore eaque quod fugiat? Quidem, aperiam.
-                        </p>
+                                            </p>
                                         </div>
                                         <div class="reply-action">
                                             <a class="reply-link" href="#" rel="nofollow">reply <i class="fas fa-share-square icon"></i></a>
@@ -262,11 +217,11 @@
                                         </div>
                                         <div class="comment-content">
                                             <p class="comment-text">
-                          Lorem ipsum dolor, sit amet consectetur
+                                                Lorem ipsum dolor, sit amet consectetur
                           adipisicing elit.Odit iure magni
                           quidem debitis ut tempore eaque quod fugiat? Quidem, aperiam.
                           
-                        </p>
+                                            </p>
                                         </div>
                                         <div class="reply-action">
                                             <a class="reply-link" href="#" rel="nofollow">reply <i class="fas fa-share-square icon"></i></a>
@@ -290,10 +245,10 @@
                                         </div>
                                         <div class="comment-content">
                                             <p class="comment-text">
-                          Lorem ipsum dolor, sit amet consectetur
+                                                Lorem ipsum dolor, sit amet consectetur
                           adipisicing elit.Odit iure magni
                           quidem debitis ut tempore eaque quod fugiat? Quidem, aperiam.
-                        </p>
+                                            </p>
                                         </div>
                                         <div class="reply-action">
                                             <a class="reply-link" href="#" rel="nofollow">reply <i class="fas fa-share-square icon"></i></a>
@@ -307,8 +262,9 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6   ">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="userName" name="UserName" type="text"  value="" placeholder />
-                                                <label class="input-label">Name
+                                                <input class="text-input" id="userName" name="UserName" type="text" value="" placeholder />
+                                                <label class="input-label">
+                                                    Name
                                                 <span class="req">*</span></label>
                                                 <span class="b-border"></span>
                                                 <span class="error-msg"></span>
@@ -316,8 +272,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6   ">
                                             <div class="input-wrapper">
-                                                <input class="text-input" type="email" id="userMail" name="UserMail" value="" placeholder/>
-                                                <label class="input-label" for="userMail"> E-mail <span class="req">*</span></label>
+                                                <input class="text-input" type="email" id="userMail" name="UserMail" value="" placeholder />
+                                                <label class="input-label" for="userMail">E-mail <span class="req">*</span></label>
                                                 <span class="b-border"></span>
                                                 <span class="error-msg"></span>
                                             </div>
@@ -325,7 +281,7 @@
                                         <div class="col-12">
                                             <div class="input-wrapper">
                                                 <textarea class="text-input" id="msg-text" name="replyMessage"></textarea>
-                                                <label class="input-label" for="msg-text"> your comment <span class="req">*</span></label>
+                                                <label class="input-label" for="msg-text">your comment <span class="req">*</span></label>
                                                 <span class="b-border"></span>
                                                 <i></i>
                                                 <span class="error-msg"></span>
