@@ -182,6 +182,8 @@
     <Content Include="assets\images\blog\recent-posts\2.jpg" />
     <Content Include="assets\images\blog\recent-posts\3.jpg" />
     <Content Include="assets\images\blog\recent-posts\4.jpg" />
+    <Content Include="assets\images\blog\user.svg" />
+    <Content Include="assets\images\blog\userAppsoly.svg" />
     <Content Include="assets\images\clients-logos\1-white.png" />
     <Content Include="assets\images\clients-logos\2-white.png" />
     <Content Include="assets\images\clients-logos\3-white.png" />
@@ -260,6 +262,7 @@
     <Content Include="BDKPanel\createDebts.aspx" />
     <Content Include="BDKPanel\css\bootstrap.min.css" />
     <Content Include="BDKPanel\css\style.css" />
+    <Content Include="BDKPanel\customers.aspx" />
     <Content Include="BDKPanel\debts.aspx" />
     <Content Include="BDKPanel\expenses.aspx" />
     <Content Include="BDKPanel\img\HHBadak.jpg" />
@@ -367,6 +370,13 @@
     </Compile>
     <Compile Include="BDKPanel\createDebts.aspx.designer.cs">
       <DependentUpon>createDebts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\customers.aspx.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\customers.aspx.designer.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
     </Compile>
     <Compile Include="BDKPanel\debts.aspx.cs">
       <DependentUpon>debts.aspx</DependentUpon>

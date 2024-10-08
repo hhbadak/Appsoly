@@ -61,13 +61,6 @@
         <header class=" header-basic" id="page-header">
             <div class="header-search-box">
                 <div class="close-search"></div>
-                <form class="nav-search search-form" role="search" method="get" action="#">
-                    <div class="search-wrapper">
-                        <label class="search-lbl">Search for:</label>
-                        <input class="search-input" type="search" placeholder="Search..." name="searchInput" autofocus="autofocus" />
-                        <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
-                    </div>
-                </form>
             </div>
             <div class="container">
                 <!--Start navbar-->
@@ -82,16 +75,10 @@
                                 <ul class="sub-menu ">
                                     <li class="nav-item menu-item sub-menu-item"><a class="nav-link menu-link sub-menu-link  " href="index.aspx">Yazılım</a></li>
                                     <li class="nav-item menu-item sub-menu-item"><a class="nav-link menu-link sub-menu-link  " href="http://tukkandeko.com/">3D Yazıcı</a></li>
-                                   <%-- <li class="nav-item menu-item sub-menu-item"><a class="nav-link menu-link sub-menu-link  " href="home-3.html">home-3</a></li>
-                                    <li class="nav-item menu-item sub-menu-item"><a class="nav-link menu-link sub-menu-link  " href="home-rtl.html">home [ RTL languages ]</a></li>--%>
                                 </ul>
                             </li>
                             <li class="nav-item menu-item"><a class="nav-link menu-link  " href="services.aspx">Hizmetlerimiz </a></li>
                             <li class="nav-item menu-item"><a class="nav-link menu-link" href="about.aspx" onclick="activateMenuItem(event)">Hakkımızda</a></li>
-                            <%--<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#portfolio">portfolio  </a></li>--%>
-                            <%--<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#pricing">pricing plans </a></li>--%>
-                            <%--<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#testimonials">testimonials </a></li>--%>
-                            <%--<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#faq">FAQ </a></li>--%>
                             <li class="nav-item menu-item"><a class="nav-link menu-link  " href="blog.aspx">Blog </a></li>
                             <li class="nav-item menu-item"><a class="nav-link menu-link  " href="contact.aspx">Bize Ulaşın!</a></li>
                         </ul>
@@ -127,16 +114,17 @@
                         </div>
                         <div class="form-area ">
                             <div class="mailchimp-form ">
-                                <form class="one-field-form" method="post" action="#0">
-                                    <div class="field-group ">
-                                        <label class="email-label" for="email-input">Paylaşımlarımızı Takip İçin Abone Olun!</label>
-                                        <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="E-Mail Adresiniz" autocomplete="off" />
-                                        <div class="cta-area">
-                                            <input class="btn-solid subscribe-btn" type="submit" value="Abone Ol!" name="subscribe" />
-                                        </div>
+
+                                <div class="field-group ">
+                                    <label class="email-label" for="email-input">Paylaşımlarımızı Takip İçin Abone Olun!</label>
+                                    <asp:TextBox CssClass="email-input" type="email" ID="tb_subscribeMail" runat="server" onblur="validateEmail(this)" placeholder="E-Mail Adresiniz"></asp:TextBox>
+                                    <span id="emailError" style="color: red; display: none;">Lütfen geçerli bir mail adresi giriniz</span>
+                                    <div class="cta-area">
+                                        <asp:LinkButton ID="lbtn_subscribeCreate" runat="server" CssClass="btn-solid subscribe-btn" Text="Abone Ol!" OnClick="lbtn_subscribeCreate_Click"></asp:LinkButton>
                                     </div>
-                                    <span class="email-notice">*Kişisel bilgilerinizi istemeyecek ve Paylaşmayacağız</span>
-                                </form>
+                                </div>
+                                <span class="email-notice">*Kişisel bilgilerinizi istemeyecek ve Paylaşmayacağız</span>
+
                             </div>
                         </div>
                     </div>
@@ -234,6 +222,22 @@
                     }
                 }
             });
+
+            function validateEmail(emailField) {
+                var email = emailField.value;
+                var emailError = document.getElementById("emailError");
+
+                // E-mail doğrulama için basit bir regex
+                var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                // Eğer regex ile uyuşmazsa hata göster
+                if (!regex.test(email)) {
+                    emailError.style.display = "inline";
+                    emailField.focus();
+                } else {
+                    emailError.style.display = "none";
+                }
+            }
         </script>
 
         <!--     JQuery     -->

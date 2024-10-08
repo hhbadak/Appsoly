@@ -7,29 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Appsoly
+namespace Appsoly.BDKPanel
 {
 
 
-    public partial class index1
+    public partial class customers
     {
 
         /// <summary>
-        /// rp_customerLogo control.
+        /// lv_listCustomers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rp_customerLogo;
-
-        /// <summary>
-        /// rp_blog control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rp_blog;
+        protected global::System.Web.UI.WebControls.ListView lv_listCustomers;
     }
 }

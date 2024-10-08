@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="cta-area">
-                                <a class=" btn-solid reveal-start" href="#0">Get in touch</a>
+                                <a class=" btn-solid reveal-start" href="https://wa.me/+905372596733">İletişime Geç!</a>
                                 <div class="signature ">
                                     <div class="signature-img"></div>
                                     <div class="signature-name">CEO &amp; Founder </div>
@@ -76,7 +76,8 @@
                     <div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp" data-wow-delay="0.2s">
                         <div class="img-area  " data-tilt>
                             <div class="image   ">
-                                <img class="about-img img-fluid " loading="lazy" src="assets/images/about/3.png" alt="Our vision"></div>
+                                <img class="about-img img-fluid " loading="lazy" src="assets/images/about/3.png" alt="Our vision">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,8 @@
                     <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s">
                         <div class="img-area  ">
                             <div class="image  " data-tilt>
-                                <img class="about-img img-fluid " loading="lazy" src="assets/images/about/1.png" alt="about"></div>
+                                <img class="about-img img-fluid " loading="lazy" src="assets/images/about/1.png" alt="about">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp " data-wow-delay="0.6s">
@@ -96,7 +98,7 @@
                             <div class="sec-heading  light-title ">
                                 <div class="content-area">
                                     <span class=" pre-title wow fadeInUp " data-wow-delay=".2s">Neden BİZ?</span>
-                                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Müşterilerimiz Neden <span class='hollow-text'>Bizimle Çalışmayı</span> <span class='featured-text'> Tercih 
+                                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Müşterilerimiz Neden <span class='hollow-text'>Bizimle Çalışmayı</span> <span class='featured-text'>Tercih 
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                                             <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg></span>Ediyor?</h2>
                                 </div>
@@ -141,47 +143,4 @@
         </div>
     </section>
     <!-- End  about Section-->
-    <!-- Start  stats Section-->
-    <section class="stats js-stats-counter mega-section">
-        <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-3.jpg" data-bg-opacity=".2"></div>
-        <div class="container">
-            <div class="stats-inner">
-                <div class="row ">
-                    <!--Info One-->
-                    <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                        <div class="stat-box-inner  " data-tilt="data-tilt">
-                            <i class="flaticon-project-management stat-icon"></i>
-                            <p class="stat-num "><span class="counter" data-from="10" data-to="750" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p>
-                            <span class="stat-desc">finished projects</span>
-                        </div>
-                    </div>
-                    <!--Info Two-->
-                    <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                        <div class="stat-box-inner  " data-tilt="data-tilt">
-                            <i class="flaticon-content-management stat-icon"></i>
-                            <p class="stat-num "><span class="counter" data-from="0" data-to="23" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p>
-                            <span class="stat-desc">Created jobs</span>
-                        </div>
-                    </div>
-                    <!--Info Three-->
-                    <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                        <div class="stat-box-inner  " data-tilt="data-tilt">
-                            <i class="flaticon-user stat-icon"></i>
-                            <p class="stat-num "><span class="counter" data-from="0" data-to="200" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p>
-                            <span class="stat-desc">happy customers</span>
-                        </div>
-                    </div>
-                    <!--Info Four-->
-                    <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                        <div class="stat-box-inner  " data-tilt="data-tilt">
-                            <i class="flaticon-aim stat-icon"></i>
-                            <p class="stat-num "><span class="counter" data-from="0" data-to="28" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p>
-                            <span class="stat-desc">years Of exprience</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End  stats Section-->
 </asp:Content>

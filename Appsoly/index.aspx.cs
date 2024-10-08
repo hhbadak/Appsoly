@@ -28,6 +28,8 @@ namespace Appsoly
                     rp_blog.DataSource = dm.ListBlog(id); // Parametreli metot
                     rp_blog.DataBind();
                 }
+                rp_customerLogo.DataSource = dm.ListCustomer();
+                rp_customerLogo.DataBind();
             }
         }
     }

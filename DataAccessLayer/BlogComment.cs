@@ -15,5 +15,6 @@ namespace DataAccessLayer
         public string EMail { get; set; }
         public string Comment { get; set; }
         public int Count { get; set; }
+        public DateTime Date { get; set; }
     }
 }

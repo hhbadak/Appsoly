@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <!-- Start  services Section-->
-    <section class="services services-boxed mega-section  " id="services">
+   <section class="services services-boxed mega-section  " id="services">
         <div class="container">
             <div class="sec-heading  ">
                 <div class="content-area">
@@ -56,11 +56,11 @@
                 <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                     <!--Start Second service box-->
                     <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
-                        <div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div>
+                        <div class="service-icon"><i class="flaticon-instagram-1 font-icon"></i></div>
                         <span class="service-num hollow-text">2    </span>
                         <div class="service-content">
-                            <h3 class="service-title">Dijital Pazarlama</h3>
-                            <p class="service-text">Müşterilerimize dijital varlıklarını büyütmeleri ve online başarılarını artırmaları konusunda yardımcı oluyoruz.</p>
+                            <h3 class="service-title">Sosyal Medya Danışmanlığı</h3>
+                            <p class="service-text">Müşterilerimizin sosyal medya varlıklarını büyütmeleri ve çevrimiçi başarılarını artırmaları konusunda profesyonel destek sağlıyoruz.</p>
                         </div>
                     </div>
                     <!-- End Second service box-->
@@ -68,11 +68,11 @@
                 <div class="col-12 col-md-6  col-lg-4 mx-auto  ">
                     <!--Start Third service box-->
                     <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
-                        <div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div>
+                        <div class="service-icon"><i class="flaticon-3d-modeling font-icon"></i></div>
                         <span class="service-num hollow-text">3    </span>
                         <div class="service-content">
-                            <h3 class="service-title">SaaS (Software as a Service) </h3>
-                            <p class="service-text">SaaS (Software as a Service) sağlayıcısı olarak, müşterilere bulut tabanlı yazılım çözümleri sunuyoruz.</p>
+                            <h3 class="service-title">3D Baskı Hizmetleri</h3>
+                            <p class="service-text">3D baskı hizmeti sağlayıcısı olarak, müşterilerimize yüksek kaliteli ve özelleştirilebilir 3D baskı çözümleri sunuyoruz.</p>
                         </div>
                     </div>
                     <!-- End Third service box-->
@@ -85,19 +85,6 @@
                         <div class="service-content">
                             <h3 class="service-title">Veri Analizi</h3>
                             <p class="service-text">Veri analitiğiyle geleceği öngörüyor, rekabet avantajı sağlıyoruz. Güçlü verilerle başarıyı yakalayın.</p>
-                        </div>
-                    </div>
-                    <!-- End 6th service box-->
-                </div>
-                <div class="col-12 col-md-6  col-lg-4 mx-auto  ">
-                    <!--Start 7th service box-->
-                    <div class="box service-box  wow fadeInUp  reveal-start" data-wow-offset="0" data-wow-delay=".6s">
-                        <div class="service-icon"><i class="flaticon-3d-modeling font-icon"></i></div>
-                        <span class="service-num hollow-text">6</span>
-                        <div class="service-content">
-                            <h3 class="service-title">3D Yazıcı
-                            </h3>
-                            <p class="service-text">Appsoly olarak, 3D filament baskı hizmetleri sunuyoruz. Müşterilerimizin ihtiyaçlarına uygun olarak, çeşitli renklerde ve malzemelerde (PLA, ABS, PETG vb.) filamentler kullanarak yüksek kaliteli baskılar yapıyoruz. Endüstriyel prototiplerden ev dekorasyonuna kadar geniş bir yelpazede üretim yapıyoruz.</p>
                         </div>
                     </div>
                     <!-- End 6th service box-->

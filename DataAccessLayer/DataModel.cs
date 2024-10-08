@@ -281,6 +281,236 @@ namespace DataAccessLayer
             }
         }
 
+        public List<Blog> ListBlogSoftware()
+        {
+            try
+            {
+                List<Blog> blogs = new List<Blog>();
+                cmd.CommandText = "SELECT b.ID, b.Title, b.Brief, b.ImgThumb, b.Image1, b.Contents1, b.Contents2, b.Image2, b.ImportantInformation, b.Content2Continued, b.Weld, s.Service, t.Username, b.Date " +
+                                  "FROM Blog AS b " +
+                                  "JOIN Services AS s ON s.ID = b.ServiceID " +
+                                  "JOIN Team AS t ON t.ID = b.TeamID " +
+                                  "WHERE b.ID = 1" +
+                                  "ORDER BY b.Date DESC;";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Blog b = new Blog();
+                    b.ID = reader.GetInt32(0);
+                    b.Title = reader.GetString(1);
+                    b.Brief = reader.GetString(2);
+                    b.ImgThumb = reader.GetString(3);
+                    b.Image1 = reader.GetString(4);
+                    b.Contents1 = reader.GetString(5);
+                    b.Contents2 = reader.GetString(6);
+                    b.Image2 = reader.GetString(7);
+                    b.ImportantInformation = reader.GetString(8);
+                    b.Content2Continued = reader.GetString(9);
+                    b.Weld = reader.GetString(10);
+                    b.Service = reader.GetString(11);
+                    b.Team = reader.GetString(12);
+                    b.Date = reader.GetDateTime(13);
+                    blogs.Add(b);
+                }
+                return blogs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Blog> ListBlogSocial()
+        {
+            try
+            {
+                List<Blog> blogs = new List<Blog>();
+                cmd.CommandText = "SELECT b.ID, b.Title, b.Brief, b.ImgThumb, b.Image1, b.Contents1, b.Contents2, b.Image2, b.ImportantInformation, b.Content2Continued, b.Weld, s.Service, t.Username, b.Date " +
+                                  "FROM Blog AS b " +
+                                  "JOIN Services AS s ON s.ID = b.ServiceID " +
+                                  "JOIN Team AS t ON t.ID = b.TeamID " +
+                                  "WHERE b.ID = 2" +
+                                  "ORDER BY b.Date DESC;";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Blog b = new Blog();
+                    b.ID = reader.GetInt32(0);
+                    b.Title = reader.GetString(1);
+                    b.Brief = reader.GetString(2);
+                    b.ImgThumb = reader.GetString(3);
+                    b.Image1 = reader.GetString(4);
+                    b.Contents1 = reader.GetString(5);
+                    b.Contents2 = reader.GetString(6);
+                    b.Image2 = reader.GetString(7);
+                    b.ImportantInformation = reader.GetString(8);
+                    b.Content2Continued = reader.GetString(9);
+                    b.Weld = reader.GetString(10);
+                    b.Service = reader.GetString(11);
+                    b.Team = reader.GetString(12);
+                    b.Date = reader.GetDateTime(13);
+                    blogs.Add(b);
+                }
+                return blogs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Blog> ListBlogSeo()
+        {
+            try
+            {
+                List<Blog> blogs = new List<Blog>();
+                cmd.CommandText = "SELECT b.ID, b.Title, b.Brief, b.ImgThumb, b.Image1, b.Contents1, b.Contents2, b.Image2, b.ImportantInformation, b.Content2Continued, b.Weld, s.Service, t.Username, b.Date " +
+                                  "FROM Blog AS b " +
+                                  "JOIN Services AS s ON s.ID = b.ServiceID " +
+                                  "JOIN Team AS t ON t.ID = b.TeamID " +
+                                  "WHERE b.ID = 3" +
+                                  "ORDER BY b.Date DESC;";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Blog b = new Blog();
+                    b.ID = reader.GetInt32(0);
+                    b.Title = reader.GetString(1);
+                    b.Brief = reader.GetString(2);
+                    b.ImgThumb = reader.GetString(3);
+                    b.Image1 = reader.GetString(4);
+                    b.Contents1 = reader.GetString(5);
+                    b.Contents2 = reader.GetString(6);
+                    b.Image2 = reader.GetString(7);
+                    b.ImportantInformation = reader.GetString(8);
+                    b.Content2Continued = reader.GetString(9);
+                    b.Weld = reader.GetString(10);
+                    b.Service = reader.GetString(11);
+                    b.Team = reader.GetString(12);
+                    b.Date = reader.GetDateTime(13);
+                    blogs.Add(b);
+                }
+                return blogs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Blog> ListBlogMobile()
+        {
+            try
+            {
+                List<Blog> blogs = new List<Blog>();
+                cmd.CommandText = "SELECT b.ID, b.Title, b.Brief, b.ImgThumb, b.Image1, b.Contents1, b.Contents2, b.Image2, b.ImportantInformation, b.Content2Continued, b.Weld, s.Service, t.Username, b.Date " +
+                                  "FROM Blog AS b " +
+                                  "JOIN Services AS s ON s.ID = b.ServiceID " +
+                                  "JOIN Team AS t ON t.ID = b.TeamID " +
+                                  "WHERE b.ID = 5" +
+                                  "ORDER BY b.Date DESC;";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Blog b = new Blog();
+                    b.ID = reader.GetInt32(0);
+                    b.Title = reader.GetString(1);
+                    b.Brief = reader.GetString(2);
+                    b.ImgThumb = reader.GetString(3);
+                    b.Image1 = reader.GetString(4);
+                    b.Contents1 = reader.GetString(5);
+                    b.Contents2 = reader.GetString(6);
+                    b.Image2 = reader.GetString(7);
+                    b.ImportantInformation = reader.GetString(8);
+                    b.Content2Continued = reader.GetString(9);
+                    b.Weld = reader.GetString(10);
+                    b.Service = reader.GetString(11);
+                    b.Team = reader.GetString(12);
+                    b.Date = reader.GetDateTime(13);
+                    blogs.Add(b);
+                }
+                return blogs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Blog> ListBlogBt()
+        {
+            try
+            {
+                List<Blog> blogs = new List<Blog>();
+                cmd.CommandText = "SELECT b.ID, b.Title, b.Brief, b.ImgThumb, b.Image1, b.Contents1, b.Contents2, b.Image2, b.ImportantInformation, b.Content2Continued, b.Weld, s.Service, t.Username, b.Date " +
+                                  "FROM Blog AS b " +
+                                  "JOIN Services AS s ON s.ID = b.ServiceID " +
+                                  "JOIN Team AS t ON t.ID = b.TeamID " +
+                                  "WHERE b.ID = 4" +
+                                  "ORDER BY b.Date DESC;";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Blog b = new Blog();
+                    b.ID = reader.GetInt32(0);
+                    b.Title = reader.GetString(1);
+                    b.Brief = reader.GetString(2);
+                    b.ImgThumb = reader.GetString(3);
+                    b.Image1 = reader.GetString(4);
+                    b.Contents1 = reader.GetString(5);
+                    b.Contents2 = reader.GetString(6);
+                    b.Image2 = reader.GetString(7);
+                    b.ImportantInformation = reader.GetString(8);
+                    b.Content2Continued = reader.GetString(9);
+                    b.Weld = reader.GetString(10);
+                    b.Service = reader.GetString(11);
+                    b.Team = reader.GetString(12);
+                    b.Date = reader.GetDateTime(13);
+                    blogs.Add(b);
+                }
+                return blogs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         public List<Blog> ListBlogDetail(int bid)
         {
             try
@@ -361,6 +591,164 @@ namespace DataAccessLayer
             {
                 con.Close();
             }
+        }
+        #endregion
+
+        #region COMMENT METOT
+
+        public List<BlogComment> ListComment(int bid)
+        {
+            try
+            {
+                List<BlogComment> comments = new List<BlogComment>();
+                cmd.CommandText = "SELECT ID, BlogID, Name, EMail, Comment, Date FROM BlogComment WHERE BlogID = @bid";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@bid", bid);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    BlogComment bc = new BlogComment();
+                    bc.ID = reader.GetInt32(0);
+                    bc.BlogID = reader.GetInt32(1);
+                    bc.Name = reader.GetString(2);
+                    bc.EMail = reader.GetString(3);
+                    bc.Comment = reader.GetString(4);
+                    bc.Date = reader.GetDateTime(5);
+                    comments.Add(bc);
+                }
+                return comments;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DataControl(string comment)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT COUNT(*) FROM BlogComment WHERE Comment = @comment";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@comment", comment);
+                con.Open();
+                int sayi = Convert.ToInt32(cmd.ExecuteScalar());
+                if (sayi == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            finally { con.Close(); }
+        }
+
+        public bool CreateComment(BlogComment meta)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO BlogComment(BlogID, Name, EMail, Comment, Date) VALUES(@bid, @name, @email, @comment, @date)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@bid", meta.BlogID);
+                cmd.Parameters.AddWithValue("@name", meta.Name);
+                cmd.Parameters.AddWithValue("@email", meta.EMail);
+                cmd.Parameters.AddWithValue("@comment", meta.Comment);
+                cmd.Parameters.AddWithValue("@date", meta.Date);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            { return false; }
+            finally { con.Close(); }
+        }
+        #endregion
+
+        #region CUSTOMER METOT
+
+        public List<Customers> ListCustomer()
+        {
+            List<Customers> customer = new List<Customers>();
+            try
+            {
+                cmd.CommandText = "SELECT * FROM Customers";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Customers c = new Customers();
+                    c.ID = reader.GetInt32(0);
+                    c.Name = reader.GetString(1);
+                    c.Company = reader.GetString(2);
+                    c.CompanyPosition = reader.GetString(3);
+                    c.Mail = reader.GetString(4);
+                    c.Phone = reader.GetString(5);
+                    c.Image = reader.GetString(6);
+                    c.City = reader.GetString(7);
+                    c.CreateDate = reader.GetDateTime(8);
+                    c.Status = reader.GetBoolean(9);
+                    c.StatusStr = reader.GetBoolean(9) ? "<label style='color:green'>Aktif</label>" : "<label style='color:gray'>Pasif</label>";
+                    customer.Add(c);
+                }
+                return customer;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
+        #region SUBSCRIBE METOT
+
+        public bool SubscribeDataControl(string mail)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT COUNT(*) FROM Subscription WHERE EMail = @mail";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@mail", mail);
+                con.Open();
+                int sayi = Convert.ToInt32(cmd.ExecuteScalar());
+                if (sayi == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            finally { con.Close(); }
+        }
+
+        public bool CreateSubscribe(Subscription meta)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Subscription(EMail) VALUES(@email)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@email", meta.EMail);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            { return false; }
+            finally { con.Close(); }
         }
         #endregion
     }

@@ -16,5 +16,8 @@ namespace DataAccessLayer
         public string Phone { get; set; }
         public string Image { get; set; }
         public string City { get; set; }
+        public DateTime CreateDate { get; set; }
+        public bool Status { get; set; }
+        public string StatusStr { get; set; }
     }
 }

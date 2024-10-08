@@ -17,10 +17,7 @@
                                 <div class="hero-social-icons mb-3 ">
                                     <div class="sc-wrapper dir-row sc-flat">
                                         <ul class="sc-list">
-                                            <li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
-                                            <li class="sc-item " title="linkedin"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-linkedin sc-icon"></i></a></li>
-                                            <li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
-                                            <li class="sc-item " title="twitter"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-twitter sc-icon"></i></a></li>
+                                            <li class="sc-item " title="instagram"><a class="sc-link" href="https://www.instagram.com/appsoly.software/" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -52,7 +49,7 @@
                     </div>
                 </div>
                 <!--start of image-area -->
-                <div class="col-12   mx-md-auto col-lg-6 text-center " data-tilt>
+                <div class="col-12   mx-md-auto col-lg-6 text-center ">
                     <div class="hero-image-area mb-5 mb-lg-0">
                         <div class="hero-img-wraper  ">
                             <img class="img-fluid " src="assets/images/hero/illustration-1.png" alt="" draggable="false">
@@ -118,11 +115,11 @@
                 <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                     <!--Start Second service box-->
                     <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
-                        <div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div>
+                        <div class="service-icon"><i class="flaticon-instagram-1 font-icon"></i></div>
                         <span class="service-num hollow-text">2    </span>
                         <div class="service-content">
-                            <h3 class="service-title">Dijital Pazarlama</h3>
-                            <p class="service-text">Müşterilerimize dijital varlıklarını büyütmeleri ve online başarılarını artırmaları konusunda yardımcı oluyoruz.</p>
+                            <h3 class="service-title">Sosyal Medya Danışmanlığı</h3>
+                            <p class="service-text">Müşterilerimizin sosyal medya varlıklarını büyütmeleri ve çevrimiçi başarılarını artırmaları konusunda profesyonel destek sağlıyoruz.</p>
                         </div>
                     </div>
                     <!-- End Second service box-->
@@ -130,11 +127,11 @@
                 <div class="col-12 col-md-6  col-lg-4 mx-auto  ">
                     <!--Start Third service box-->
                     <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
-                        <div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div>
+                        <div class="service-icon"><i class="flaticon-3d-modeling font-icon"></i></div>
                         <span class="service-num hollow-text">3    </span>
                         <div class="service-content">
-                            <h3 class="service-title">SaaS (Software as a Service) </h3>
-                            <p class="service-text">SaaS (Software as a Service) sağlayıcısı olarak, müşterilere bulut tabanlı yazılım çözümleri sunuyoruz.</p>
+                            <h3 class="service-title">3D Baskı Hizmetleri</h3>
+                            <p class="service-text">3D baskı hizmeti sağlayıcısı olarak, müşterilerimize yüksek kaliteli ve özelleştirilebilir 3D baskı çözümleri sunuyoruz.</p>
                         </div>
                     </div>
                     <!-- End Third service box-->
@@ -157,197 +154,35 @@
     <!-- End  services Section-->
 
     <!-- Start  our-clients Section-->
-    <section class="our-clients  mega-section   wow fadeInUp" id="our-clients" data-wow-delay="0.2s">
+
+
+    <section class="our-clients mega-section wow fadeInUp" id="our-clients" data-wow-delay="0.2s">
         <div class="container">
-            <div class="sec-heading   centered ">
+            <div class="sec-heading centered ">
                 <div class="content-area">
-                    <h2 class=" title wow fadeInUp" data-wow-delay=".4s">Dünya çapında 30'dan fazla müşterinin güvendiği</h2>
+                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Dünya çapında 30'dan fazla müşterinin güvendiği</h2>
                 </div>
             </div>
-            <div class=" clients-logos d-flex align-items-center justify-content-around flex-wrap">
-                <!--Swiper-->
+            <div class="clients-logos d-flex align-items-center justify-content-around flex-wrap">
+                <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper clients-logo-wrapper wow fadeIn " data-wow-delay=".02s">
-                        <!-- every client logo is located inside div  with clss name "swiper-slide ".
-              if you want to add more logos please keep the strcture of the swiper-slide as showen below
-              
-              
-              -->
-                        <div class="swiper-slide">
-                            <div class="client-logo  ">
-                                <a href="https://www.ckr.av.tr/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/cakirAvukatlik.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://godigital2achieve.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/digital2actieve.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://efortemizlik.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/eforTemizlik.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://fethiyescooterrentals.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/fethiyescooter.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://galata.edu.tr/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/galatauni.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="http://gulermimarlik.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/gulerMimarlik.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://iletisimteknolojisi.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/iletisimTeknolojisi.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://karaagacspor.com.tr/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/karaagacSpor.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://pixalmanya.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/pixAlmanya.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://sarizeybekhaber.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/sarizeybek.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://tarihicukurcarsibalikcisi.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/tarihicukurcarsibalikcisi.png" alt=" "></a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-logo ">
-                                <a href="https://tezharitamuhendislik.com/">
-                                    <img class="img-fluid logo " loading="lazy" src="assets/images/customer/tezHarita.png" alt=" "></a>
-                            </div>
-                        </div>
+                        <asp:Repeater ID="rp_customerLogo" runat="server">
+                            <ItemTemplate>
+                                <div class="swiper-slide">
+                                    <div class="client-logo">
+                                        <a href="../index.aspx#our-clients">
+                                            <img class="img-fluid logo" loading="lazy" src="../assets/images/customer/<%# Eval("Image") %>" alt="appsoly bilişim sistemleri">
+                                        </a>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End  our-clients Section-->
-
-    <!-- Start  testimonials Section-->
-    <%--<section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials">
-        <div class="overlay-photo-image-bg parallax " data-bg-img="assets/images/sections-bg-images/1.jpg" data-bg-opacity=".25"></div>
-        <div class="container">
-            <div class="sec-heading  centered ">
-                <div class="content-area">
-                    <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">testimonials</span>
-                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">customers <span class='hollow-text'>testmonials</span></h2>
-                </div>
-            </div>
-            <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-10  mx-auto">
-                    <div class="swiper-container  wow fadeInUp  " data-wow-delay="0.2s">
-                        <div class="swiper-wrapper">
-                            <!--First Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img ">
-                                            <img class="img-fluid " loading="lazy" src="assets/images/testimonials/1.png" alt="First Slide ">
-                                        </div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text ">ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
-                                            </div>
-                                        </div>
-                                        <div class="customer-info ">
-                                            <div class="customer-details">
-                                                <p class="customer-name">Yusuf amin</p>
-                                                <p class="customer-role">founder</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Second Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img ">
-                                            <img class="img-fluid " loading="lazy" src="assets/images/testimonials/2.png" alt="First Slide ">
-                                        </div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text ">ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
-                                            </div>
-                                        </div>
-                                        <div class="customer-info ">
-                                            <div class="customer-details">
-                                                <p class="customer-name">fouad osman</p>
-                                                <p class="customer-role">officer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--third Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img ">
-                                            <img class="img-fluid " loading="lazy" src="assets/images/testimonials/3.png" alt="First Slide ">
-                                        </div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text ">ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.            </p>
-                                            </div>
-                                        </div>
-                                        <div class="customer-info ">
-                                            <div class="customer-details">
-                                                <p class="customer-name">fairouz mhmd</p>
-                                                <p class="customer-role">manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--navigation buttons-->
-                        <div class="swiper-button-prev">
-                            <div class="left-arrow">
-                                <i class="bi bi-chevron-left icon "></i>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next">
-                            <div class="right-arrow">
-                                <i class="bi bi-chevron-right icon "></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-    <!-- End  testimonials Section-->
-
     <!-- Start  blog Section-->
     <section class="blog blog-home mega-section  " id="blog">
         <div class="container ">
@@ -356,7 +191,7 @@
                     <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">blog</span>
                     <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">latest <span class='hollow-text'>news</span></h2>
                 </div>
-                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid" href="blog-home-3-col.html">see all posts<i class="bi bi-arrow-right icon "></i></a></div>
+                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid" href="../blog.aspx">Tüm Bloglar<i class="bi bi-arrow-right icon "></i></a></div>
             </div>
             <div class="row ">
                 <div class="col-12 ">
