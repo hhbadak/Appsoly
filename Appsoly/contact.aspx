@@ -65,38 +65,36 @@
                     <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
                         <div class="custom-form-area input-boxed">
                             <!--Form To have user messages-->
-                            <form class="main-form" id="contact-us-form" action="php/send-mail.php" method="post">
                                 <span class="done-msg"></span>
                                 <div class="row ">
                                     <div class="col-12 col-lg-6">
                                         <div class="   input-wrapper">
-                                            <input class="text-input" id="user-name" name="UserName" type="text" />
+                                            <asp:TextBox ID="tb_name" runat="server" CssClass="text-input"></asp:TextBox>
                                             <label class="input-label" for="user-name">Adınız <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="   input-wrapper">
-                                            <input class="text-input" id="user-email" name="UserEmail" type="email" />
+                                            <asp:TextBox ID="tb_mail" runat="server" CssClass="text-input"></asp:TextBox>
                                             <label class="input-label" for="user-email">E-mail <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 ">
                                         <div class="   input-wrapper">
-                                            <input class="text-input" id="msg-subject" name="subject" type="text" />
+                                            <asp:TextBox ID="tb_subject" runat="server" CssClass="text-input"></asp:TextBox>
                                             <label class="input-label" for="msg-subject">Konu <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 ">
                                         <div class="   input-wrapper">
-                                            <textarea class=" text-input" id="msg-text" name="message"></textarea>
+                                            <asp:TextBox ID="tb_description" runat="server" CssClass="text-input" TextMode="MultiLine" Rows="5" Columns="30"></asp:TextBox>
                                             <label class="input-label" for="msg-text">Mesajınız<span class="req">*</span></label><span class="b-border"></span><i></i><span class="error-msg"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 submit-wrapper">
-                                        <button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">Mesaj Gönder</button>
+                                        <asp:LinkButton ID="lbtn_send" runat="server" CssClass="btn-solid" Text="Mesaj Gönder" OnClick="lbtn_send_Click"></asp:LinkButton>
                                     </div>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>

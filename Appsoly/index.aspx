@@ -11,7 +11,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 ">
                     <!--Start of .hero-text-area-->
-                    <div class="hero-text-area   ">
+                    <div class="hero-text-area">
                         <div class="row">
                             <div class="col-12   ">
                                 <div class="hero-social-icons mb-3 ">

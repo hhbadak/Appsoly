@@ -54,6 +54,9 @@
                         </ItemTemplate>
                     </asp:Repeater>
                     <div class="col-12 col-lg-8">
+                        <div id="notification" style="display: none; background-color: #d4edda; color: #155724; padding: 10px; margin-bottom: 15px; border: 1px solid #c3e6cb;">
+                            Yorum Ekleme Başarılı
+                        </div>
                         <div class="comments-area panel">
                             <h6 class="panel-title">Yorumlar</h6>
                             <asp:Repeater ID="rp_comment" runat="server">
@@ -83,7 +86,6 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-
                         </div>
                         <div class="panel">
                             <h6 class="panel-title" id="commentss" runat="server">Yorumunuzu bizimle paylaşın!</h6>
@@ -147,5 +149,8 @@
                 emailError.style.display = "none";
             }
         }
+        window.onload = function () {
+            // Burada scriptlerinizi yazabilirsiniz
+        };
     </script>
 </asp:Content>

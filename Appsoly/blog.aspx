@@ -42,7 +42,7 @@
                                                             <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
                                                                 <h2 class="post-title"><%# Eval("Title") %></h2>
                                                             </a>
-                                                            <p class="post-excerpt"><%# Eval("Brief") %></p>
+                                                            <p class="post-excerpt" style="opacity: .75;"><%# Eval("Brief") %></p>
 
                                                             <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
                                                         </div>
@@ -72,7 +72,7 @@
                                                             <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
                                                                 <h2 class="post-title"><%# Eval("Title") %></h2>
                                                             </a>
-                                                            <p class="post-excerpt"><%# Eval("Brief") %></p>
+                                                            <p class="post-excerpt" style="opacity: .75;"><%# Eval("Brief") %></p>
 
                                                             <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
                                                         </div>
@@ -102,7 +102,7 @@
                                                             <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
                                                                 <h2 class="post-title"><%# Eval("Title") %></h2>
                                                             </a>
-                                                            <p class="post-excerpt"><%# Eval("Brief") %></p>
+                                                            <p class="post-excerpt" style="opacity: .75;"><%# Eval("Brief") %></p>
 
                                                             <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
                                                         </div>
@@ -132,7 +132,7 @@
                                                             <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
                                                                 <h2 class="post-title"><%# Eval("Title") %></h2>
                                                             </a>
-                                                            <p class="post-excerpt"><%# Eval("Brief") %></p>
+                                                            <p class="post-excerpt" style="opacity: .75;"><%# Eval("Brief") %></p>
 
                                                             <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
                                                         </div>
@@ -162,7 +162,7 @@
                                                             <a class="post-link" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>
                                                                 <h2 class="post-title"><%# Eval("Title") %></h2>
                                                             </a>
-                                                            <p class="post-excerpt"><%# Eval("Brief") %></p>
+                                                            <p class="post-excerpt" style="opacity: .75;"><%# Eval("Brief") %></p>
 
                                                             <a class="read-more" title="<%# Eval("Title") %>" href='blogDetail.aspx?mid=<%# Eval("ID") %>'>Devamı...<i class="bi bi-arrow-right icon "></i></a>
                                                         </div>

@@ -13,16 +13,14 @@ namespace Appsoly
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                // bid parametresi varsa, parametreli metodu çağır
-                int id = Convert.ToInt32(Request.QueryString["mid"]);
-                rp_blogDetail.DataSource = dm.ListBlogDetail(id); // Parametreli metot
-                rp_blogDetail.DataBind();
 
-                rp_comment.DataSource = dm.ListComment(id); // Parametreli metot
-                rp_comment.DataBind();
-            }
+            // bid parametresi varsa, parametreli metodu çağır
+            int id = Convert.ToInt32(Request.QueryString["mid"]);
+            rp_blogDetail.DataSource = dm.ListBlogDetail(id); // Parametreli metot
+            rp_blogDetail.DataBind();
+
+            rp_comment.DataSource = dm.ListComment(id); // Parametreli metot
+            rp_comment.DataBind();
         }
 
         protected void lbtn_submit_Click(object sender, EventArgs e)
@@ -52,9 +50,14 @@ namespace Appsoly
 
                 if (dm.CreateComment(bc))
                 {
-                    tb_comment.Text = tb_mail.Text = tb_name.Text = "";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Yorum Ekleme Başarılı');", true);
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "notification",
+    "document.getElementById('" + tb_comment.ClientID + "').value=''; " +
+    "document.getElementById('" + tb_mail.ClientID + "').value=''; " +
+    "document.getElementById('" + tb_name.ClientID + "').value=''; " +
+    "location.reload();", true);
+
                 }
+
                 else
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Lütfen tekrar deneyiniz.');", true);
@@ -62,7 +65,9 @@ namespace Appsoly
             }
             else
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Aynı yorum yalnızca bir kez eklenebilir!');", true);
+                tb_comment.Text = " ";
+                tb_mail.Text = " ";
+                tb_name.Text = " ";
             }
         }
     }

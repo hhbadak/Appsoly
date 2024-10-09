@@ -290,7 +290,7 @@ namespace DataAccessLayer
                                   "FROM Blog AS b " +
                                   "JOIN Services AS s ON s.ID = b.ServiceID " +
                                   "JOIN Team AS t ON t.ID = b.TeamID " +
-                                  "WHERE b.ID = 1" +
+                                  "WHERE b.ServiceID = 1" +
                                   "ORDER BY b.Date DESC;";
                 cmd.Parameters.Clear();
 
@@ -336,7 +336,7 @@ namespace DataAccessLayer
                                   "FROM Blog AS b " +
                                   "JOIN Services AS s ON s.ID = b.ServiceID " +
                                   "JOIN Team AS t ON t.ID = b.TeamID " +
-                                  "WHERE b.ID = 2" +
+                                  "WHERE b.ServiceID = 2" +
                                   "ORDER BY b.Date DESC;";
                 cmd.Parameters.Clear();
 
@@ -382,7 +382,7 @@ namespace DataAccessLayer
                                   "FROM Blog AS b " +
                                   "JOIN Services AS s ON s.ID = b.ServiceID " +
                                   "JOIN Team AS t ON t.ID = b.TeamID " +
-                                  "WHERE b.ID = 3" +
+                                  "WHERE b.ServiceID = 3" +
                                   "ORDER BY b.Date DESC;";
                 cmd.Parameters.Clear();
 
@@ -428,7 +428,7 @@ namespace DataAccessLayer
                                   "FROM Blog AS b " +
                                   "JOIN Services AS s ON s.ID = b.ServiceID " +
                                   "JOIN Team AS t ON t.ID = b.TeamID " +
-                                  "WHERE b.ID = 5" +
+                                  "WHERE b.ServiceID = 5" +
                                   "ORDER BY b.Date DESC;";
                 cmd.Parameters.Clear();
 
@@ -474,7 +474,7 @@ namespace DataAccessLayer
                                   "FROM Blog AS b " +
                                   "JOIN Services AS s ON s.ID = b.ServiceID " +
                                   "JOIN Team AS t ON t.ID = b.TeamID " +
-                                  "WHERE b.ID = 4" +
+                                  "WHERE b.ServiceID = 4" +
                                   "ORDER BY b.Date DESC;";
                 cmd.Parameters.Clear();
 
