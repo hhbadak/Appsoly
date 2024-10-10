@@ -7,7 +7,7 @@
         <div class="row g-4">
             <div class="col-lg-12 col-sm-12 col-xl-6" style="width: 100%">
                 <div class="m-n2">
-                    <a href="../BDKPanel/createBlog.aspx" class="btn btn-outline-primary w-100 m-2" type="button">Blog EKLE</a>
+                    <a href="../BDKPanel/createCustomer.aspx" class="btn btn-outline-primary w-100 m-2" type="button">Müşteri EKLE</a>
                 </div>
             </div>
             <div class="col-12">

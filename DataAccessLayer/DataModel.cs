@@ -751,5 +751,37 @@ namespace DataAccessLayer
             finally { con.Close(); }
         }
         #endregion
+
+        #region CUSTOMER METOT
+
+        public bool CreateCustomer(Customers master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Customers(Name, Company, CompanyPosition, Mail, Phone, Image, City, CreateDate, Status) VALUES (@name, @company, @cposi, @mail, @phone, @img, @city, @date, @status)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", master.Name);
+                cmd.Parameters.AddWithValue("@company", master.Company);
+                cmd.Parameters.AddWithValue("@cposi", master.CompanyPosition);
+                cmd.Parameters.AddWithValue("@mail", master.Mail);
+                cmd.Parameters.AddWithValue("@phone", master.Phone);
+                cmd.Parameters.AddWithValue("@img", master.Image);
+                cmd.Parameters.AddWithValue("@city", master.City);
+                cmd.Parameters.AddWithValue("@date", master.CreateDate);
+                cmd.Parameters.AddWithValue("@status", master.Status);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
     }
 }
