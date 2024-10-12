@@ -217,6 +217,7 @@
     <Content Include="assets\images\logo\appsolyBlack.png" />
     <Content Include="assets\images\logo\HHB.png" />
     <Content Include="assets\images\logo\HHBlack.png" />
+    <Content Include="assets\images\logo\imlec.png" />
     <Content Include="assets\images\logo\logo-colored.png" />
     <Content Include="assets\images\logo\logo-dark.png" />
     <Content Include="assets\images\logo\logo-light.png" />

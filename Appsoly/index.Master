@@ -7,7 +7,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT Solutions &amp; Business Services Responsive HTML5 Bootstrap5  Website Template">
+    <meta name="description" content="Appsoly Bilişim Sistemleri, Eskişehir merkezli olarak web tasarım, yazılım geliştirme, PC donanımı ve bakımı, server & veritabanı çözümleri, 3D printer baskı hizmetleri sunar. Kaliteli hizmet, müşteri odaklı yaklaşım ve rekabetçi fiyatlarımızla Eskişehir'de fark yaratıyoruz.">
+
+    <meta name="keywords" content="Eskişehir web tasarım, yazılım geliştirme, PC donanımı, PC bakımı, server client çözümleri, veritabanı hizmetleri, 3D printer baskı, Eskişehir 3D baskı, Eskişehir bilişim hizmetleri, kaliteli bilişim çözümleri, müşteri odaklı yazılım, Appsoly Bilişim, rekabetçi fiyatlarla bilişim hizmetleri">
+
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="icon" href="assets/images/logo/appsolyA.png" type="image/x-icon">
@@ -51,7 +55,8 @@
     <!-- main-LTR -->
     <link rel="stylesheet" href="css/main-LTR.css">
 
-    <title>Appsoly</title>
+    <title>Appsoly Bilişim Sistemleri - Eskişehir Web Tasarım, Yazılım, PC Donanımı & 3D Baskı Hizmetleri</title>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

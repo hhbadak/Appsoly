@@ -142,6 +142,7 @@ html {
 }
 
 body {
+    cursor: url('../assets/images/logo/imlec.png'), auto;
     font-family: var(--ltr-main-font-f);
     direction: ltr;
     text-align: left;
