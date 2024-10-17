@@ -32,10 +32,10 @@ namespace Appsoly
             try
             {
                 MailMessage mail = new MailMessage();
-                SmtpClient smtp = new SmtpClient("neptune.odeaweb.com", 587); // SMTP sunucusu ve port
+                SmtpClient smtp = new SmtpClient("srvm15.trwww.com", 587); // SMTP sunucusu ve port
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("info@appsoly.com", "yP9a00@f1");
+                smtp.Credentials = new NetworkCredential("info@appsoly.com", "FRyR81Dj");
                 smtp.Timeout = 120000; // Timeout'u artırdık
 
                 mail.From = new MailAddress("info@appsoly.com");
