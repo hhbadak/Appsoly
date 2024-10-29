@@ -52,7 +52,7 @@
                 <div class="col-12   mx-md-auto col-lg-6 text-center ">
                     <div class="hero-image-area mb-5 mb-lg-0">
                         <div class="hero-img-wraper  ">
-                            <img class="img-fluid " src="assets/images/hero/illustration-1.png" alt="" draggable="false">
+                            <img class="img-fluid" src="assets/images/hero/illustration-1.png" alt="" draggable="false" loading="lazy">
                         </div>
                     </div>
                 </div>

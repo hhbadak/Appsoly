@@ -710,6 +710,27 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+
+        public bool DeleteCustomer(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Customers WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         #endregion
 
         #region SUBSCRIBE METOT
@@ -769,6 +790,591 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@city", master.City);
                 cmd.Parameters.AddWithValue("@date", master.CreateDate);
                 cmd.Parameters.AddWithValue("@status", master.Status);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
+        #region PAYE METOT
+        public bool CreatePayee(Payees master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Payees(Name) VALUES (@name)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", master.Name);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Payees> PayeeList()
+        {
+            try
+            {
+                List<Payees> payees = new List<Payees>();
+                cmd.CommandText = "SELECT ID, Name FROM Payees";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Payees p = new Payees();
+                    p.ID = reader.GetInt32(0);
+                    p.Name = reader.GetString(1);
+                    payees.Add(p);
+                }
+                return payees;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DeletePayee(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Payees WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+        #endregion
+
+        #region DEBTS METOT
+        public bool CreateDebt(Debts master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Debts(PayeeID, TotalDebt, MonthlyPayment, Statu) VALUES (@payid, @totd, @month, @statu)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@payid", master.PayeeID);
+                cmd.Parameters.AddWithValue("@totd", master.TotalDebt);
+                cmd.Parameters.AddWithValue("@month", master.MonthlyPayment);
+                cmd.Parameters.AddWithValue("@statu", master.Statu);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Debts> DebtListFromPayee()
+        {
+            try
+            {
+                List<Debts> debt = new List<Debts>();
+                cmd.CommandText = "SELECT d.ID, p.Name, d.TotalDebt, d.MonthlyPayment, d.Statu FROM Debts AS d\r\nJOIN Payees AS p ON p.ID = d.PayeeID";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Debts d = new Debts();
+                    d.ID = reader.GetInt32(0);
+                    d.Payee = reader.GetString(1);
+                    d.TotalDebt = reader.GetDecimal(2);
+                    d.MonthlyPayment = reader.GetDecimal(3);
+                    d.Statu = reader.GetBoolean(4);
+                    debt.Add(d);
+                }
+                return debt;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DeleteDebt(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE Debts WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
+        #region DEBT DETAIL METOT
+        public bool CreateDebtDetail(DebtDetails master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO DebtDetails(DebtID, MonthlyPayment, InstallmentDate, Status) VALUES (@debid, @month, @insdate, @statu)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@debid", master.DebtID);
+                cmd.Parameters.AddWithValue("@month", master.MonthlyPayment);
+                cmd.Parameters.AddWithValue("@insdate", master.InstallmentDate);
+                cmd.Parameters.AddWithValue("@statu", master.Status);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<DebtDetails> DebtDeatilListFromPayee()
+        {
+            try
+            {
+                List<DebtDetails> debtdet = new List<DebtDetails>();
+                cmd.CommandText = "SELECT dd.ID, p.Name, dd.MonthlyPayment, dd.InstallmentDate, dd.Status FROM DebtDetails AS dd\r\nJOIN Debts AS d ON d.ID = dd.DebtID\r\nJOIN Payees AS p ON p.ID = d.PayeeID";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DebtDetails dd = new DebtDetails();
+                    dd.ID = reader.GetInt32(0);
+                    dd.Payee = reader.GetString(1);
+                    dd.MonthlyPayment = reader.GetDecimal(2);
+                    dd.InstallmentDate = reader.GetDateTime(3);
+                    dd.Status = reader.GetBoolean(4);
+                    dd.StatusStr = reader.GetBoolean(4) ?
+     "<i class='fa fa-ban' style='color:red'></i>" :
+    "<i class='fa fa-check-circle' style='color:green'></i>";
+                    debtdet.Add(dd);
+                }
+                return debtdet;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<DebtDetails> DebtDeatilListFromID(int id)
+        {
+            try
+            {
+                List<DebtDetails> debtdet = new List<DebtDetails>();
+                cmd.CommandText = "SELECT dd.ID, p.Name, dd.MonthlyPayment, dd.InstallmentDate, dd.Status FROM DebtDetails AS dd " +
+                                  "JOIN Debts AS d ON d.ID = dd.DebtID " +
+                                  "JOIN Payees AS p ON p.ID = d.PayeeID WHERE d.ID = @id";
+                cmd.Parameters.AddWithValue("@id", id);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DebtDetails dd = new DebtDetails();
+                    dd.ID = reader.GetInt32(0);
+                    dd.Payee = reader.GetString(1);
+                    dd.MonthlyPayment = reader.GetDecimal(2);
+                    dd.InstallmentDate = reader.GetDateTime(3);
+                    dd.Status = reader.GetBoolean(4);
+                    dd.StatusStr = reader.GetBoolean(4) ?
+                        "<i class='fa fa-ban' style='color:red'></i>" :
+                        "<i class='fa fa-check-circle' style='color:green'></i>";
+                    debtdet.Add(dd);
+                }
+                return debtdet;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<DebtDetails> DebtDeatilListFromDate()
+        {
+            try
+            {
+                List<DebtDetails> debtdet = new List<DebtDetails>();
+                cmd.CommandText = @"
+            SELECT dd.ID, p.Name, dd.MonthlyPayment, dd.InstallmentDate, dd.Status 
+            FROM DebtDetails AS dd
+            JOIN Debts AS d ON d.ID = dd.DebtID
+            JOIN Payees AS p ON p.ID = d.PayeeID
+            WHERE MONTH(dd.InstallmentDate) = MONTH(GETDATE()) 
+            AND YEAR(dd.InstallmentDate) = YEAR(GETDATE())"; // Filter by current month and year
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DebtDetails dd = new DebtDetails();
+                    dd.ID = reader.GetInt32(0);
+                    dd.Payee = reader.GetString(1);
+                    dd.MonthlyPayment = reader.GetDecimal(2);
+                    dd.InstallmentDate = reader.GetDateTime(3);
+                    dd.Status = reader.GetBoolean(4);
+                    dd.StatusStr = dd.Status ?
+                        "<i class='fa fa-ban' style='color:red'></i>" :
+                        "<i class='fa fa-check-circle' style='color:green'></i>";
+                    debtdet.Add(dd);
+                }
+                return debtdet;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<DebtDetails> DebtDeatilListFromPayFalse()
+        {
+            try
+            {
+                List<DebtDetails> debtdet = new List<DebtDetails>();
+                cmd.CommandText = "SELECT dd.ID, p.Name, dd.MonthlyPayment, dd.InstallmentDate, dd.Status FROM DebtDetails AS dd\r\nJOIN Debts AS d ON d.ID = dd.DebtID\r\nJOIN Payees AS p ON p.ID = d.PayeeID WHERE dd.Status = 1";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    DebtDetails dd = new DebtDetails();
+                    dd.ID = reader.GetInt32(0);
+                    dd.Payee = reader.GetString(1);
+                    dd.MonthlyPayment = reader.GetDecimal(2);
+                    dd.InstallmentDate = reader.GetDateTime(3);
+                    dd.Status = reader.GetBoolean(4);
+                    dd.StatusStr = reader.GetBoolean(4) ?
+     "<i class='fa fa-ban' style='color:red'></i>" :
+    "<i class='fa fa-check-circle' style='color:green'></i>";
+                    debtdet.Add(dd);
+                }
+                return debtdet;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DeleteDebtDetail(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE DebtDetails WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool UpdateDebtDetail(int id)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE DebtDetails SET Status = 0 WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        #endregion
+
+        #region INCOME METOT
+        public List<Incomes> IncomeListFromPayee()
+        {
+            try
+            {
+                List<Incomes> income = new List<Incomes>();
+                cmd.CommandText = "SELECT i.ID, iss.Name, i.IncomingFee, i.DATE, i.Description FROM Incomes AS i\r\nJOIN IncomeSource AS iss ON iss.ID = i.IncomeSourceID";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Incomes i = new Incomes();
+                    i.ID = reader.GetInt32(0);
+                    i.IncomeSource = reader.GetString(1);
+                    i.IncomingFee = reader.GetDecimal(2);
+                    i.Date = reader.GetDateTime(3);
+                    i.Description = reader.GetString(4);
+                    income.Add(i);
+                }
+                return income;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool CreateIncomeSource(IncomeSource master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO IncomeSource(Name) VALUES (@name)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", master.Name);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool CreateIncome(Incomes master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Incomes(IncomeSourceID, IncomingFee, DATE, Description) VALUES (@isid, @if, @date, @desc)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isid", master.IncomeSourceID);
+                cmd.Parameters.AddWithValue("@if", master.IncomingFee);
+                cmd.Parameters.AddWithValue("@date", master.Date);
+                cmd.Parameters.AddWithValue("@desc", master.Description);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<IncomeSource> IncomeSourceList()
+        {
+            try
+            {
+                List<IncomeSource> incomeSource = new List<IncomeSource>();
+                cmd.CommandText = "SELECT ID, Name FROM IncomeSource";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    IncomeSource i = new IncomeSource();
+                    i.ID = reader.GetInt32(0);
+                    i.Name = reader.GetString(1);
+                    incomeSource.Add(i);
+                }
+                return incomeSource;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        #endregion
+
+        #region EXPENSES METOT
+        public List<Expenses> ExpenseListFromPayee()
+        {
+            try
+            {
+                List<Expenses> income = new List<Expenses>();
+                cmd.CommandText = "SELECT e.ID, es.Name, e.IncomingFee, e.DATE, e.Description FROM Expenses AS e\r\nJOIN ExpenseSource AS es ON es.ID = e.ExpenseSourceID";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Expenses i = new Expenses();
+                    i.ID = reader.GetInt32(0);
+                    i.ExpenseSource = reader.GetString(1);
+                    i.OutGoingFee = reader.GetDecimal(2);
+                    i.Date = reader.GetDateTime(3);
+                    i.Description = reader.GetString(4);
+                    income.Add(i);
+                }
+                return income;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
+
+        public bool CreateExpenseSource(ExpenseSource master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO ExpenseSource(Name) VALUES (@name)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", master.Name);
+                con.Open();
+                cmd.ExecuteReader();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<ExpenseSource> ExpenseSourceList()
+        {
+            try
+            {
+                List<ExpenseSource> expenseSource = new List<ExpenseSource>();
+                cmd.CommandText = "SELECT ID, Name FROM ExpenseSource";
+                cmd.Parameters.Clear();
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ExpenseSource e = new ExpenseSource();
+                    e.ID = reader.GetInt32(0);
+                    e.Name = reader.GetString(1);
+                    expenseSource.Add(e);
+                }
+                return expenseSource;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool CreateExpense(Expenses master)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Expenses(ExpenseSourceID, IncomingFee, DATE, Description) VALUES (@esid, @if, @date, @desc)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@esid", master.ExpenseSourceID);
+                cmd.Parameters.AddWithValue("@if", master.OutGoingFee);
+                cmd.Parameters.AddWithValue("@date", master.Date);
+                cmd.Parameters.AddWithValue("@desc", master.Description);
                 con.Open();
                 cmd.ExecuteReader();
                 return true;

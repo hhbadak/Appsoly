@@ -50,8 +50,7 @@
                     <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                         <div class="bg-secondary rounded p-4 p-sm-5 my-4 mx-3">
                             <div class="d-flex align-items-center justify-content-between mb-3">
-                                <img src="img/logo/150x34.png" />
-                                <h3>Sign In</h3>
+                                <img src="img/logo/150x34.png" style="margin-left: auto; margin-right: auto;"/>
                             </div>
                             <div class="form-floating mb-3">
                                 <asp:TextBox type="email" runat="server" class="form-control" ID="lbl_email" placeholder="name@example.com"></asp:TextBox>
@@ -61,15 +60,7 @@
                                 <asp:TextBox type="password" runat="server" class="form-control" ID="lbl_password" placeholder="Password"></asp:TextBox>
                                 <label for="lbl_password">Password</label>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <a href="#0">Forgot Password</a>
-                            </div>
                             <asp:LinkButton ID="btn_submit" runat="server" class="btn btn-primary py-3 w-100 mb-4" OnClick="btn_submit_Click">Giriş Yap</asp:LinkButton>
-                            <p class="text-center mb-0">Don't have an Account? <a href="#0">Sign Up</a></p>
                         </div>
                     </div>
                 </div>

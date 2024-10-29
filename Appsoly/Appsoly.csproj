@@ -208,6 +208,7 @@
     <Content Include="assets\images\hero\hero-bg-1.jpg" />
     <Content Include="assets\images\hero\hero-bg-2.jpg" />
     <Content Include="assets\images\hero\hero-bg-3.jpg" />
+    <Content Include="assets\images\hero\hero.svg" />
     <Content Include="assets\images\hero\illustration-1.png" />
     <Content Include="assets\images\hero\inner-page-hero.jpg" />
     <Content Include="assets\images\icons\play-icon.svg" />
@@ -261,10 +262,17 @@
     <Content Include="BDKPanel\blogs.aspx" />
     <Content Include="BDKPanel\createBlog.aspx" />
     <Content Include="BDKPanel\createCustomer.aspx" />
+    <Content Include="BDKPanel\createDebtDetail.aspx" />
     <Content Include="BDKPanel\createDebts.aspx" />
+    <Content Include="BDKPanel\createExpenses.aspx" />
+    <Content Include="BDKPanel\createExpensesSource.aspx" />
+    <Content Include="BDKPanel\createIncome.aspx" />
+    <Content Include="BDKPanel\createIncomeSource.aspx" />
+    <Content Include="BDKPanel\createPayee.aspx" />
     <Content Include="BDKPanel\css\bootstrap.min.css" />
     <Content Include="BDKPanel\css\style.css" />
     <Content Include="BDKPanel\customers.aspx" />
+    <Content Include="BDKPanel\debtDetail.aspx" />
     <Content Include="BDKPanel\debts.aspx" />
     <Content Include="BDKPanel\expenses.aspx" />
     <Content Include="BDKPanel\img\HHBadak.jpg" />
@@ -295,6 +303,8 @@
     <Content Include="BDKPanel\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
     <Content Include="BDKPanel\lib\waypoints\waypoints.min.js" />
     <Content Include="BDKPanel\monthlyPayments.aspx" />
+    <Content Include="BDKPanel\outstandingDebt.aspx" />
+    <Content Include="BDKPanel\payees.aspx" />
     <Content Include="BDKPanel\signin.aspx" />
     <Content Include="BDKPanel\sindex.aspx" />
     <Content Include="blog.aspx" />
@@ -373,6 +383,13 @@
     <Compile Include="BDKPanel\createCustomer.aspx.designer.cs">
       <DependentUpon>createCustomer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BDKPanel\createDebtDetail.aspx.cs">
+      <DependentUpon>createDebtDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createDebtDetail.aspx.designer.cs">
+      <DependentUpon>createDebtDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BDKPanel\createDebts.aspx.cs">
       <DependentUpon>createDebts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -380,12 +397,54 @@
     <Compile Include="BDKPanel\createDebts.aspx.designer.cs">
       <DependentUpon>createDebts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BDKPanel\createExpenses.aspx.cs">
+      <DependentUpon>createExpenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createExpenses.aspx.designer.cs">
+      <DependentUpon>createExpenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createExpensesSource.aspx.cs">
+      <DependentUpon>createExpensesSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createExpensesSource.aspx.designer.cs">
+      <DependentUpon>createExpensesSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createIncome.aspx.cs">
+      <DependentUpon>createIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createIncome.aspx.designer.cs">
+      <DependentUpon>createIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createIncomeSource.aspx.cs">
+      <DependentUpon>createIncomeSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createIncomeSource.aspx.designer.cs">
+      <DependentUpon>createIncomeSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\createPayee.aspx.cs">
+      <DependentUpon>createPayee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\createPayee.aspx.designer.cs">
+      <DependentUpon>createPayee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BDKPanel\customers.aspx.cs">
       <DependentUpon>customers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BDKPanel\customers.aspx.designer.cs">
       <DependentUpon>customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\debtDetail.aspx.cs">
+      <DependentUpon>debtDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\debtDetail.aspx.designer.cs">
+      <DependentUpon>debtDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="BDKPanel\debts.aspx.cs">
       <DependentUpon>debts.aspx</DependentUpon>
@@ -414,6 +473,20 @@
     </Compile>
     <Compile Include="BDKPanel\monthlyPayments.aspx.designer.cs">
       <DependentUpon>monthlyPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\outstandingDebt.aspx.cs">
+      <DependentUpon>outstandingDebt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\outstandingDebt.aspx.designer.cs">
+      <DependentUpon>outstandingDebt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BDKPanel\payees.aspx.cs">
+      <DependentUpon>payees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BDKPanel\payees.aspx.designer.cs">
+      <DependentUpon>payees.aspx</DependentUpon>
     </Compile>
     <Compile Include="BDKPanel\signin.aspx.cs">
       <DependentUpon>signin.aspx</DependentUpon>

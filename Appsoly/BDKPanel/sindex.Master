@@ -33,6 +33,17 @@
     <link href="../BDKPanel/css/style.css" rel="stylesheet">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <!-- jQuery Kütüphanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI Kütüphanesi -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jQuery UI CSS (Takvim Stil) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -71,10 +82,12 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-money-bill-wave me-2"></i>Gelir | Gider</a>
                                 <div class="dropdown-menu bg-transparent border-0">
+                                    <a href="../BDKPanel/payees.aspx" class="dropdown-item">Alacaklı</a>
                                     <a href="../BDKPanel/debts.aspx" class="dropdown-item">Borçlar</a>
-                                    <a href="typography.html" class="dropdown-item">Gelirler</a>
-                                    <a href="element.html" class="dropdown-item">Giderler</a>
-                                    <a href="element.html" class="dropdown-item">Aylık Ödemeler</a>
+                                    <a href="../BDKPanel/incomes.aspx" class="dropdown-item">Gelirler</a>
+                                    <a href="../BDKPanel/expenses.aspx" class="dropdown-item">Giderler</a>
+                                    <a href="../BDKPanel/monthlyPayments.aspx" class="dropdown-item">Aylık Ödemeler</a>
+                                    <a href="../BDKPanel/outstandingDebt.aspx" class="dropdown-item">Ödenmemiş Borçlar</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">

@@ -7,29 +7,20 @@
         <div class="bg-secondary rounded h-100 p-4">
             <h6 class="mb-4">Floating Label</h6>
             <div class="form-floating mb-3">
-                <select class="form-select" id="floatingSelect"
-                    aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Works with selects</label>
+                <asp:DropDownList ID="ddl_payee" runat="server" Enabled="true" CssClass="form-select mb-3" AppendDataBoundItems="true">
+                    <asp:ListItem Text="Alacaklı" Value="0"></asp:ListItem>
+                </asp:DropDownList>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput"
-                    placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <asp:TextBox ID="tb_totalDebt" runat="server" CssClass="form-control" placeholder="Toplam Borç"></asp:TextBox>
+                <label for="floatingInput">Toplam Borç</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword"
-                    placeholder="Password">
-                <label for="floatingPassword">Password</label>
+                <asp:TextBox ID="tb_monthlyPayment" runat="server" CssClass="form-control" placeholder="Aylık Taksit Tutarı"></asp:TextBox>
+                <label for="floatingInput">Aylık Taksit Tutarı</label>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here"
-                    id="floatingTextarea" style="height: 150px;"></textarea>
-                <label for="floatingTextarea">Comments</label>
+            <div class="mb-3">
+                <asp:LinkButton ID="lbtn_create" runat="server" Text="EKLE" CssClass="btn btn-outline-primary w-100 p-4" OnClick="lbtn_create_Click"></asp:LinkButton>
             </div>
         </div>
     </div>

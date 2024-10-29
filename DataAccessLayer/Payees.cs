@@ -9,6 +9,6 @@ namespace DataAccessLayer
     public class Payees
     {
         public int ID { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }

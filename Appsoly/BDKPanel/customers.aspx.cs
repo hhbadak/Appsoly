@@ -22,7 +22,7 @@ namespace Appsoly.BDKPanel
             if (e.CommandName == "delete")
             {
                 int id = Convert.ToInt32(e.CommandArgument);
-                dm.DeleteBlog(id);
+                dm.DeleteCustomer(id);
                 Response.Redirect("~/BDKPanel/customers.aspx");
             }
         }

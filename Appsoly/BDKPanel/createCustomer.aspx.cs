@@ -66,7 +66,7 @@ namespace Appsoly.BDKPanel
                                     {
                                         string script = "alert('TEBRİKLER Ürün ekleme işlemini tamamladınız');";
                                         ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
-                                        Response.Redirect("../BDKPanel/sindex.aspx");
+                                        Response.Redirect("../BDKPanel/customers.aspx");
                                     }
                                 }
                             }
